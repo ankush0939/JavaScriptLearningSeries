@@ -9,3 +9,7 @@ function attributeChanger() {
 function styleChanger() {
     document.getElementById('styleChange').style.color='red'
 }
+
+function popup() {
+    window.alert("This is how pop-ups are made")
+}
