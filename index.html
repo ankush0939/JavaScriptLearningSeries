@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Learning Series</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@432&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
+
 <body style="text-align: center;">
+    <nav class="position-sticky">
+        <div class="logo">
+          <img
+            src="/pngwave.png"
+            alt=""
+            style="height: 60px; width: 60px"
+          />
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+ 
     
     <h1>Welcome to JS Learning Series</h2>
     <h4>By: Ankush Mishra and Co.</h4>
 
     <h2>HTML Text Changer</h2>
     <p id="textChange">Here is the initial text.</p>
-    <button onclick="textChanger()" class="w3-btn w3-amber w3-hover-purple  w3-round-xxlarge w3-border-red"><b>Click me!!</b></button>
+    <button onclick="textChanger()" class="btn btn-warning rounded-pill"><b>Click me!!</b></button>
 
     <h2>HTML Attribute Changer</h2>
     <img id="attributeChange" src="img/original.png" width="133" width='160'><br>
-    <button onclick="attributeChanger()" class="w3-btn w3-amber w3-hover-purple  w3-round-xxlarge w3-border-red"><b>Click me!!</b></button>
+    <button onclick="attributeChanger()" class="btn btn-warning rounded-pill"><b>Click me!!</b></button>
 
     <h2>HTML Style Changer</h2>
     <p id="styleChange">This is the initial text</p>
-    <button onclick="styleChanger()" class="w3-btn w3-amber w3-hover-purple  w3-round-xxlarge w3-border-red"><b>Click me!!</b></button>
+    <button onclick="styleChanger()" class="btn btn-warning rounded-pill"><b>Click me!!</b></button>
 
     <h2>Screen Popup</h2>
     <p>See The pop ups</p>
-    <button onclick="popup()" class="w3-btn w3-amber w3-hover-purple  w3-round-xxlarge w3-border-red"><b>click me!!</b></button>
+    <button onclick="popup()" class="btn btn-warning rounded-pill"><b>click me!!</b></button>
 
     <h2>Date</h2>
     <p>Click the button below to see date</p>
-    <button onclick="viewdate()" class="w3-btn w3-amber w3-hover-purple  w3-round-xxlarge w3-border-red"><b>Click me!!</b></button>
+    <button onclick="viewdate()" class="btn btn-warning rounded-pill"><b>Click me!!</b></button>
     <p><line id="datetext1" style="display: none;">Date in String Format: </line>
     <line id="viewdate1"></line></p>
     <p><line id="datetext2" style="display: none;">Date in UTC Format: </line>
